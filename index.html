@@ -18,59 +18,63 @@
             <fieldset class="scheduler-border">
 
                 <legend class="scheduler-border"><strong>Bé tập tính</strong></legend>
-
-                <div class="row"> 
+                <form name="myForm">
+                    <div class="row"> 
+                    
+                        <div class="control-group col-sm-9 p-2">
+                            
+                            <label class="control-label input-label" for="number1">Số thứ nhất:</label>
+                            
+                            <div class="controls">
                 
-                    <div class="control-group col-sm-9 p-2">
+                                <input type="text" id="io-box" name="number1" >
                 
-                        <label class="control-label input-label" for="number1">Số thứ nhất:</label>
+                            </div>
                 
-                        <div class="controls">
+                            <label class="control-label input-label" for="number2">Số thứ hai:</label>
                 
-                            <input type="text" id="io-box" name="number1" placeholder="Nhập số thứ nhất!">
+                            <div class="controls">
+                
+                                <input type="text" id="io-box" name="number2">
+                
+                            </div>
                 
                         </div>
                 
-                        <label class="control-label input-label" for="number2">Số thứ hai:</label>
+                        <div class="choose-caculation col-sm-2 p-2">
                 
-                        <div class="controls">
+                            <label class="half-width"><input type="radio" id="plus">Cộng</label>
                 
-                            <input type="text" id="io-box" name="number2" placeholder="Nhập số thứ hai!">
+                            <label><input type="radio" id="minus">Trừ</label>
+                
+                            <label class="half-width"><input type="radio" id="multi">Nhân</label>
+                
+                            <label><input type="radio" id="divide">Chia</label>
+                
+                        </div>
+                
+                        <div class="col-sm-1 p-1" style="margin-top:auto">
+                
+                            <button type="submit" class="btn btn-info my-btn" onclick="Caculate()">Tính</button>
                 
                         </div>
                 
                     </div>
-                
-                    <div class="choose-caculation col-sm-2 p-2">
-                
-                        <label class="half-width"><input type="radio" name="caculation" checked>Cộng</label>
-                
-                        <label><input type="radio" name="caculation">Trừ</label>
-                
-                        <label class="half-width"><input type="radio" name="caculation">Nhân</label>
-                
-                        <label><input type="radio" name="caculation">Chia</label>
-                
-                    </div>
-                
-                    <div class="col-sm-1 p-1" style="margin-top:auto">
-                
-                        <button type="button" class="btn btn-info my-btn">Tính</button>
-                
-                    </div>
-                
-                </div>
+                   
+                </form>
                 <div class="row">
-                    <div class="col-sm-1 p-2">
-                        <label for="result">Kết quả:</label>
-                    </div>
-                    <div class="col-sm-11 p-2">
-                        <input type="text" id="io-box" name="result">
-                    </div>
+                        <div class="col-sm-1 p-2">
+                            <label for="result">Kết quả:</label>
+                        </div>
+                        <div class="col-sm-11 p-2">
+                            <p id="result"></p>
+                        </div>
                 </div>
                 
-            
             </fieldset>
+            
     
         </div>
+
+    <script src="./script.js"></script>
 </body>
