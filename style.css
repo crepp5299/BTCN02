@@ -1,0 +1,35 @@
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    border-radius: 5px;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    width:inherit; 
+    padding:0 10px; 
+    border-bottom:none;
+}
+
+#io-box{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.choose-caculation{
+    margin-top: 30px;
+    border: 1px groove #ddd !important;
+    border-radius: 5px;
+}
+
+.half-width{
+    display: inline-block;
+    width: 45%;
+    height: 45%;
+}
+
+.my-btn{
+    width: 100%;
+}

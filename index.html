@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bé tập tính</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+            <fieldset class="scheduler-border">
+
+                <legend class="scheduler-border"><strong>Bé tập tính</strong></legend>
+
+                <div class="row"> 
+                
+                    <div class="control-group col-sm-9 p-2">
+                
+                        <label class="control-label input-label" for="number1">Số thứ nhất:</label>
+                
+                        <div class="controls">
+                
+                            <input type="text" id="io-box" name="number1" placeholder="Nhập số thứ nhất!">
+                
+                        </div>
+                
+                        <label class="control-label input-label" for="number2">Số thứ hai:</label>
+                
+                        <div class="controls">
+                
+                            <input type="text" id="io-box" name="number2" placeholder="Nhập số thứ hai!">
+                
+                        </div>
+                
+                    </div>
+                
+                    <div class="choose-caculation col-sm-2 p-2">
+                
+                        <label class="half-width"><input type="radio" name="caculation" checked>Cộng</label>
+                
+                        <label><input type="radio" name="caculation">Trừ</label>
+                
+                        <label class="half-width"><input type="radio" name="caculation">Nhân</label>
+                
+                        <label><input type="radio" name="caculation">Chia</label>
+                
+                    </div>
+                
+                    <div class="col-sm-1 p-1" style="margin-top:auto">
+                
+                        <button type="button" class="btn btn-info my-btn">Tính</button>
+                
+                    </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 p-2">
+                        <label for="result">Kết quả:</label>
+                    </div>
+                    <div class="col-sm-11 p-2">
+                        <input type="text" id="io-box" name="result">
+                    </div>
+                </div>
+                
+            
+            </fieldset>
+    
+        </div>
+</body>
