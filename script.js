@@ -9,10 +9,6 @@ function validateForm(){
         alert("CHƯA NHẬP ĐỦ HAI SỐ!");
         return false;
     }
-    else if(isNaN(x) || isNaN(y)){
-        alert("DỮ LIỆU NHẬP VÀO KHÔNG PHẢI SỐ THỰC!")
-        return false;
-    }
     else if(!(checkPlus || checkMulti || checkMinus || checkDivide)){
         alert("CHƯA CHỌN PHÉP TÍNH!")
         return false;
