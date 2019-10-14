@@ -13,7 +13,7 @@ legend.scheduler-border {
     border-bottom:none;
 }
 
-#io-box{
+.io-box{
     border-radius: 5px;
     width: 100%;
 }

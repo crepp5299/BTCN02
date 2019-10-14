@@ -18,24 +18,24 @@
             <fieldset class="scheduler-border">
 
                 <legend class="scheduler-border"><strong>Bé tập tính</strong></legend>
-                <form name="myForm">
+
                     <div class="row"> 
                     
                         <div class="control-group col-sm-9 p-2">
                             
-                            <label class="control-label input-label" for="number1">Số thứ nhất:</label>
+                            <label class="control-label input-label" name="number1">Số thứ nhất:</label>
                             
                             <div class="controls">
                 
-                                <input type="text" id="io-box" name="number1" >
+                                <input type="text" class="io-box" id = "number1" onmouseout="focusOut()">
                 
                             </div>
                 
-                            <label class="control-label input-label" for="number2">Số thứ hai:</label>
+                            <label class="control-label input-label" name="number2">Số thứ hai:</label>
                 
                             <div class="controls">
                 
-                                <input type="text" id="io-box" name="number2">
+                                <input type="text" class="io-box" id="number2" onmouseout="focusOut()">
                 
                             </div>
                 
@@ -43,13 +43,13 @@
                 
                         <div class="choose-caculation col-sm-2 p-2">
                 
-                            <label class="half-width"><input type="radio" id="plus">Cộng</label>
+                            <label class="half-width"><input type="radio" id="plus" name="caculation">Cộng</label>
                 
-                            <label><input type="radio" id="minus">Trừ</label>
+                            <label><input type="radio" id="minus" name="caculation">Trừ</label>
                 
-                            <label class="half-width"><input type="radio" id="multi">Nhân</label>
+                            <label class="half-width"><input type="radio" id="multi" name="caculation">Nhân</label>
                 
-                            <label><input type="radio" id="divide">Chia</label>
+                            <label><input type="radio" id="divide" name="caculation">Chia</label>
                 
                         </div>
                 
@@ -61,7 +61,6 @@
                 
                     </div>
                    
-                </form>
                 <div class="row">
                         <div class="col-sm-1 p-2">
                             <label for="result">Kết quả:</label>
